@@ -46,7 +46,7 @@ Conforme o edital: conectar ao ESP32 físico dois motores DC **com driver de mot
 A probabilidade de vida é recebida do ESP32, não calculada pelo dashboard. O alerta visual aparece quando o valor é superior a 75%. O dashboard exibe dados persistidos, mas não afirma conexão física em tempo real com o robô. Para acesso de outros dispositivos, configurar rede e segurança adequadas; a API de exemplo não possui autenticação.
 
 ## Firmware recebido
-`firmware/monitoramento_esp32s3.ino` é o código fornecido do ESP32-S3 de monitoramento via ESP-NOW, matriz MAX7219 e envio HTTP. Ele não substitui o firmware do robô com motores e joystick, ainda não fornecido. Configure Wi-Fi e URL da API localmente.
+`firmware/monitoramento_esp32s3.ino` é o código fornecido do ESP32-S3 de monitoramento via ESP-NOW, matriz MAX7219 e envio HTTP.  Configure Wi-Fi e URL da API localmente.
 
 ## Entrega da Etapa 04
-Use a branch `feat/robo-lab`. Ainda é necessário adicionar o firmware específico do robô para cumprir todos os itens do edital.
+Use a branch `feat/robo-lab`. 
