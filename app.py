@@ -1,8 +1,12 @@
 from flask import Flask, request, jsonify, render_template
 import sqlite3, os
 from datetime import datetime, timezone
-
-app = Flask(__name__)
+app = Flask(
+    __name__,
+    template_folder='.',
+    static_folder='.',
+    static_url_path=''
+)
 DB = os.getenv('DB_PATH', os.path.join(os.path.dirname(__file__), 'leituras.db'))
 
 def connect():
