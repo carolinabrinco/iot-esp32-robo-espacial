@@ -7,6 +7,7 @@ app = Flask(
     static_folder='.',
     static_url_path=''
 )
+
 DB = os.getenv('DB_PATH', os.path.join(os.path.dirname(__file__), 'leituras.db'))
 
 def connect():
